@@ -8,4 +8,8 @@ I was goofing around with python.
 ## About TestFunction.py
 This was my first proper code, which i used to make a basic quiz game.
 
+## QuizTimePlayer.py
+This is a proper quiz program which is more optimized than TestFunction.py. <br>
+It is also more customizable and modular than TestFunction.py.
+
 
