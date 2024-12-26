@@ -1,55 +1,48 @@
 #quiz game
 from CheckIntent import start_quiz
 
-score = 0
-while True:
+questions = (
+    "Is Australia Real?",
+    "Am I cool?",
+    "AmongUs or Fortnite",
+    "Yes or No?",
+    "What is the capital of France?",
+    "By the way if Australia is real, what is the capital of Australia?"
+)
 
+answers = (
+    "yes",
+    "yes",
+    "amongus",
+    "no",
+    "paris",
+    "canberra"
+)
+
+while True:
+    score = 0
+    counter =0
     Begin = start_quiz()
     
     if Begin.lower() == "yes":
-        print("Question 1:")
-        print("Is Australia Real?")
-        Answer1 = input()
-        if Answer1.lower() == "yes":
-            print("Good Job!")
-            score += 1
-        else:
-            print("Wrong")
 
-        print("Question 2:")
-        print("Am I cool?")
-        Answer2 = input()
+        for question in questions:
+            if (counter+1 == questions.__len__()):
+                print("Last Question:")
+            else:
+                print(f"Question {counter+1}:")
 
-        if Answer2.lower() == "yes":
-            print("Good Job")
-            score += 1
-        else:
-            print("wrong")
+            print(question)
 
-        print("Question 3:")
-        print("AmongUs or Fortnite")
-        Answer3 = input()
-
-        if Answer3.lower() == "amongus":
-            print("Good Job!")
-            score += 1
-        else:
-            print("Wrong")
-
-        print("Last Question:")
-        print("Yes or No?")
-        Answer4 = input()
-
-        if Answer4.lower() == "no":
-            print("Good Job!")
-            score += 1
-        else:
-            print("Wrong")
-
-    
-
+            Answer = input()
+            if Answer.lower() == answers[counter]:
+                print("Good Job!")
+                score += 1
+            else:
+                print("Wrong")
+            counter +=1
+        
         End = f"Your score: {score}"
-
         print(End)
     else :
         print("ok")

@@ -1,13 +1,14 @@
 #quiz game
-score = 0
+
 while True:
+    score = 0
+    
     print("Quiz")
     BeginA= "START\n(Yes/No)"
     print(BeginA)
 
     Begin = input()
-
-    
+  
     if Begin.lower() == "yes":
         print("Question 1:")
         print("Is Australia Real?")
