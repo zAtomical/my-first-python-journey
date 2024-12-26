@@ -14,7 +14,6 @@ while True:
         Answer1 = input()
         if Answer1.lower() == "yes":
             print("Good Job!")
-            #score = score + 1
             score += 1
         else:
             print("Wrong")
@@ -25,7 +24,6 @@ while True:
 
         if Answer2.lower() == "yes":
             print("Good Job")
-            #score = score+1
             score += 1
         else:
             print("wrong")
