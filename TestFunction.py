@@ -30,15 +30,27 @@ while True:
         else:
             print("wrong")
 
-        print("Last Question:")
+        print("Question 3:")
         print("AmongUs or Fortnite")
         Answer3 = input()
 
         if Answer3.lower() == "amongus":
             print("Good Job!")
-            score += 
+            score += 1
         else:
             print("Wrong")
+
+        print("Last Question:")
+        print("Yes or No?")
+        Answer4 = input()
+
+        if Answer4.lower() == "no":
+            print("Good Job!")
+            score += 1
+        else:
+            print("Wrong")
+
+    
 
         End = f"Your score: {score}"
 
